@@ -30,7 +30,7 @@ $wgMetaNamespace = "Taiko_Wiki";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://taiko-wiki.herokuapp.com";
+$wgServer = "https://www.taikowiki.com";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
