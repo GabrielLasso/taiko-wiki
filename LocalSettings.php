@@ -53,10 +53,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "remotemysql.com";
-$wgDBname = "f58UOKhTpA";
-$wgDBuser = "f58UOKhTpA";
-$wgDBpassword = "t2OIBf2Vnh";
+$wgDBserver = "35.224.189.231";
+$wgDBname = "taiko_wiki";
+$wgDBuser = "root";
+$wgDBpassword = "6206387";
 
 # MySQL specific settings
 $wgDBprefix = "";
