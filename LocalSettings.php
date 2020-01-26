@@ -44,8 +44,8 @@ $wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@🌻.invalid";
-$wgPasswordSender = "apache@🌻.invalid";
+$wgEmergencyContact = "taikowiki@taikowiki.com.br";
+$wgPasswordSender = "taikowiki@taikowiki.com.br";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
@@ -53,10 +53,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "35.224.189.231";
+$wgDBserver = "localhost";
 $wgDBname = "taiko_wiki";
 $wgDBuser = "root";
-$wgDBpassword = "6206387";
+$wgDBpassword = "password";
 
 # MySQL specific settings
 $wgDBprefix = "";
@@ -65,12 +65,12 @@ $wgDBprefix = "";
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 
 ## Shared memory settings
-$wgMainCacheType = CACHE_NONE;
+$wgMainCacheType = CACHE_ACCEL;
 $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
-$wgEnableUploads = false;
+$wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 
@@ -95,14 +95,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "pt-br";
 
-$wgSecretKey = "7534809c5ba6ec7588c96695a57c3be520d5cfd162f0c359f67a8d165d9cd838";
+$wgSecretKey = "93bf30265cdf4b3096822120ff335ca1df36fae7a127f1ebba89a5927febcc8b";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "eaf8d7d36fe7cd96";
+$wgUpgradeKey = "5a988be80fc5076b";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -130,7 +130,7 @@ wfLoadSkin( 'Vector' );
 # wfLoadExtensions('ExtensionName');
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
-wfLoadExtension( 'ConfirmEdit' );
+wfLoadExtension( 'WikiEditor' );
 
 
 # End of automatically generated settings.
